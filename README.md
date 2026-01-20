@@ -1,4 +1,4 @@
-# Data Analysis Course - Utah Valley University
+# Joshua's Data Analysis Course - Utah Valley University
 
 This site serves as a repository for all class material.
 
