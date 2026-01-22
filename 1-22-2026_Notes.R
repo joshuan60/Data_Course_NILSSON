@@ -12,4 +12,9 @@ cars[1:2, 1:2]
 cars[c(1,3), c(1,4)]
 good_cars <- cars[cars$mpg > 20,]
 
-?append()
+# write.csv(good_cars, file = "Good_cars.csv")
+
+# 1. get the car with cyl equal to 4
+cyl_cars <- cars[cars$cyl == 4,]
+# Save both mpg > 20 and cyl equal to 4 into a new object
+
