@@ -95,8 +95,13 @@ df_1$calories <- c(1, 2, 4)
 # 3. after creating the df, add a new col called "calories_100"
 # the value = original cal + 100
 df_1$calories_100 <- df_1$calories + 100
-# 4. write a loop to print out the name of fruit 
-for (fruit in df_1$fruit) {
-  print(paste("I like", fruit))
+# 4. write a loop to print out the name of fruit and the amount of calories
+for (row in 1:nrow(df_1)) {
+  print(paste("The calories of",df_1$fruit[row], "is", df_1$calories_100[row]))
 }
 
+
+# Paste() notes
+(nth <- paste0(1:12, c("st", "nd", "rd", rep("th", 9))))
+paste(month.abb, "is the", nth, "month of the year.")
+paste(month.abb, letters)
