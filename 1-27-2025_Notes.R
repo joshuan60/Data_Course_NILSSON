@@ -40,3 +40,7 @@ new_car = cars %>%
   filter(cyl == 4) %>% 
   filter(wt < 3) %>% 
   filter(hp > 90)
+
+write.csv(new_car, "Data/new_car.csv"
+
+          
