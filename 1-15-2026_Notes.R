@@ -12,10 +12,9 @@ length(list.files('Data/'))
 
 list.files("Data/", recursive = T) # recursive = T Counts every file in the specified directory, this includes subdirectories
 
-list.files("Data/", pattern = '.csv', recursive = T) # pattern specifies the type of file you are looking for.
+list.files("Data/", pattern = '.csv', ignore.case = T, recursive = T) # pattern specifies the type of file you are looking for.
 
-listlist<- list.files("Data/", pattern = 't$', recursive = T) # you can customize the key characters pattern looks for.
-
+getwd()
 dat[1:3, 1:4] # [row, column]
 View(dat)
 View(listlist)
